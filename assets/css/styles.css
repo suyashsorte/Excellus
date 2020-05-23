@@ -1,0 +1,558 @@
+@charset "utf-8";
+/* This is the css file for the group project Excellus*/
+
+body, .container-fluid, header, nav, h4, h5{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.container{
+    min-height: calc(100vh - 100px);
+}
+
+.bg-indigo{
+    background-color: #6610f2 !important;
+}
+
+button:focus, input:focus, textarea:focus {
+    outline: none !important;
+}
+
+h1{
+    padding-top: 7rem !important;
+    font-size: 1.3rem;
+    color: #6610f2;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.navbar {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    position: absolute;
+    width: 100%;
+    z-index: 1500;
+}
+
+.navbar-nav{
+    margin-right: 2.5rem !important;
+}
+
+.navbar-brand{
+    margin-left: 2.5rem !important;
+    font-size: 2.4rem !important;
+    font-family: 'Monoton', cursive !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    align-items: center !important;
+    padding-top: 2rem !important;
+    padding-bottom: 1.2rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    text-align: center !important;
+}
+
+.navbar-brand{
+    left: -20% !important;
+}
+
+.activeItem{
+    background-color: #ffc107 !important;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.activeItem a:link{
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+#faceIcon{
+    transform: translate(0px, 5px) !important;
+}
+
+.dropdown-menu{
+    left: -40% !important;
+}
+
+#searchBar{
+    padding-top: 0rem !important;
+    position: absolute !important;
+    transition: all 0.35s ease;
+}
+
+#searchBar input{
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 0rem;
+    width: 31.5rem;
+    background-color: #6A33EE;
+    border: 0.5px solid #6A33EE;
+    color: white;
+    left: 2.5rem;
+}
+
+#searchBar input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 0.5; /* Firefox */
+}
+
+
+#logInMenu{
+    margin-top: -1rem !important;
+}
+
+#searchBtn{
+    padding-right: 0 !important;
+    padding-top: 1.6rem !important;
+    margin-right: 2rem !important;
+    z-index: 1000;
+}
+
+.searchBtn-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    z-index: 1000;
+}
+
+.collapsing {
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.35s ease;
+}
+
+video{
+    padding:0 !important;
+    margin:0 !important;
+    width: 100%;
+}
+
+#homeHd {
+    position: relative;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+  
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -10;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+  
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+#homeBtn{
+    width: 100%;
+    z-index: 500;
+    top: 45%;
+}
+
+#homeBtn p{
+    color: white;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.2rem;
+    width: 100%;
+    display: inline-block;
+}
+
+.btn-warning{
+    padding: .6rem 6rem;
+    font-size: 1.2rem;
+}
+
+.imgContainer{
+    height: 12rem;
+    overflow: hidden !important;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-bottom-left-radius: calc(0.25rem - 1px);
+}
+
+.textContainer{
+    height: 12rem;
+}
+
+h4{
+    font-size: 1.3rem;
+}
+
+h5{
+    color: #D0021B;
+    font-size: 1rem;
+}
+
+h4 a:link, h4 a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+h4 a:hover, h4 a:active{
+    color: #6A33EE;
+    text-decoration: none;
+}
+
+h5::before{
+    content: "$";
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #6A33EE !important;
+}
+
+/*------------ Start of newcar Page--------------*/
+
+.title-text{
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+}
+
+.backLink{
+    font-size: 1rem;
+    color: #6A33EE;
+    padding-top: 7rem;
+}
+
+.backLink a{
+    display: inline-block;
+}
+
+.backLink a::before{
+    font-family: "Material Icons";
+    content: "\E5C4 ";
+    vertical-align: bottom;
+}
+
+.backLink a:link, .backLink a:visited{
+    color: #6A33EE;
+    text-decoration: none;
+}
+
+.backLink a:hover, .backLink a:active{
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.card-text{
+    font-size: .9rem;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    margin: 0;
+}
+
+#filter .card{
+    border-radius: 0;
+    background-color: #fbfbfb;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+#filter p{
+    font-size: .9rem;
+    font-weight: 900;
+}
+
+#filter .form-check{
+    font-size: .9rem;
+}
+
+#filter .form-check .form-check-label{
+    margin-bottom: .2rem;
+}
+
+h2 span{
+    font-size: .4rem !important;
+    display: inline-block;
+    vertical-align: 80% !important;
+}
+
+.alert-success{
+    position: fixed;
+    top: 3vh;
+    z-index: 2000;
+}
+/*------------ End of newcar Page--------------*/
+
+
+/*------------ Start of Login Page--------------*/
+.form-signin{
+    width: 100%;
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+#login{
+    padding-top: 10vh;
+}
+
+#login h1{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+#inputUsername{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#inputPassword{
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+#errorMsg{
+    position: absolute;
+    color: red !important;
+}
+
+small a:link, small a:visited{
+    color: #8B5BFB;
+}
+
+small a:hover, small a:active{
+    color: #6A33EE;
+}
+/*------------ End of Login Page--------------*/
+
+/*------------ Start of AddMenu Page--------------*/
+h3{
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: #767F84;
+}
+
+.badge-primary {
+    background-color: #6A33EE !important;
+}
+  
+.badge-primary[href]:hover, .badge-primary[href]:focus {
+    background-color: #6A33EE !important;
+}
+
+.nav-tabs .nav-link:link, .nav-tabs .nav-link:visited{
+    color: #767F84 !important;
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:active{
+    color: #6A33EE !important;
+}
+
+.nav-tabs .nav-link .active{
+    color: #6A33EE !important;
+}
+
+/*------------ End of AddMenu Page--------------*/
+
+/*------------ Start of aboutUs, contactUs Page--------------*/
+.aboutUsTxt{
+    line-height: 2rem !important;
+}
+
+#map{
+    height: 30vh;
+}
+/*------------ End of aboutUs, contactUs Page--------------*/
+
+
+/*------------ Start of primary button --------------*/
+.btn-primary {
+    color: #fff;
+    background-color: #6A33EE;
+    border-color: #6A33EE;
+    transition: all .35s ease;
+}
+  
+.btn-primary:hover {
+    color: #fff;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+  
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(106, 51, 238, 0);
+}
+  
+.btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #daa609;
+    border-color: #daa609;
+}
+  
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #daa609;
+    border-color: #daa609;
+}
+  
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(106, 51, 238, 0);
+}
+/*------------ End of primary button --------------*/
+
+/* footer text and links */
+footer{
+    height: 100px;
+    background-color: #F7F7F7;
+    color: #A9A9A9;
+}
+
+#footerText{
+    font-size: 0.9em;
+    padding-top: 38px !important;
+    padding-left: 5% !important;
+}
+
+footer a:link, footer a:visited{
+    text-decoration: none;
+    color: #A9A9A9;
+}
+
+footer a:hover, footer a:active{
+    text-decoration: none;
+    color: #CEBC99;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+/*------------ Start of back to top button --------------*/
+#backToTop{
+    display: inline-block;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 5%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #6610f2;
+    color: white;
+    text-decoration: none;
+    transition: background-color .3s, opacity .3s, visibility .3s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#backToTop:hover{
+    background-color: #ffc107;
+
+}
+
+#backToTop:active{
+    background-color: #ffc107;
+}
+
+#backToTop.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+#backToTop i{
+    font-size: 3em;
+    position: relative;
+}
+
+/* pop animation when hovered */
+#backToTop i:hover{
+    animation-name: pop;
+    animation-duration: .4s;
+    animation-iteration-count: 2;
+    animation-timing-function: cubic-bezier(0.125, 0.705, 0.455, 0.905);
+    -webkit-animation-name: pop;
+    -webkit-animation-duration: .4s;
+    -webkit-animation-iteration-count: 2;
+    -webkit-animation-timing-function: cubic-bezier(0.125, 0.705, 0.455, 0.905);
+}
+
+/* keyframes of pop animation */
+@keyframes pop{
+    0%   {transform: translateY(0px);}
+    50%  {transform: translateY(4px);}
+    100% {transform: translateY(0px);}
+}
+
+@-webkit-keyframes pop{
+    0%   {-webkit-transform: translateY(0px);}
+    50%  {-webkit-transform: translateY(4px);}
+    100% {-webkit-transform: translateY(0px);}
+}
+/*------------ End of back to top button --------------*/
+
+@media (max-width: 992px){
+    #homeBtn p{
+        font-size: 1.2rem;
+    }
+
+    #searchBar{
+        position: relative !important;
+        display: block !important;
+    }
+
+    #searchBar input{
+        position: relative;
+        padding-top: .8rem;
+        padding-bottom: .8rem;
+        margin-bottom: .5rem;
+        width: 100%;
+        left: 0;
+    }
+
+    #menuBtn{
+        margin-right: 1rem !important;
+    }
+
+    #searchBarRow{
+        display: list-item;
+    }
+
+    .navbar-nav{
+        margin-right: 1rem !important;
+        margin-left: 1rem !important;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-top: .8rem !important;
+        padding-bottom: .8rem !important;
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+        text-align: center !important;
+    }
+
+    .navbar-brand{
+        margin-left: 1rem !important;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+    .imgContainer{
+        border-top-left-radius: calc(0.25rem - 1px);
+        border-top-right-radius: calc(0.25rem - 1px);
+        border-bottom-left-radius: calc(0rem - 0px) !important;
+    }
+}
